@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.myapp.testingspeech.MainActivity"
+    tools:showIn="@layout/activity_main">
+<RelativeLayout
+    android:id="@+id/introc"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ann"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/realnews"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/introstatement"
+        android:layout_below="@+id/ann"
+        android:layout_width="wrap_content"
+        android:background="@android:drawable/toast_frame"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="@string/intro" />
+
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/introc"
+        android:layoutMode="opticalBounds"
+        android:layoutDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

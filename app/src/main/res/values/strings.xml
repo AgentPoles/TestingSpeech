@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestingSpeech</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro">"Hi, . welcome to your design aid, i'm Ann the software programme that manages the entire P.O.L.E.S system. please may I know your name?"</string>
+</resources>

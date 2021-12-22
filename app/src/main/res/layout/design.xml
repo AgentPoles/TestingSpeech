@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorplastic"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/genname"
+        android:layout_height="wrap_content"
+        android:text="phase"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <GridLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:rowCount="2"
+        android:background="@android:color/transparent"
+        android:columnCount="2"
+       android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:id="@+id/imagea"
+            android:src="@mipmap/tphasec"
+            android:layout_weight="1"
+android:layout_gravity="center_horizontal"
+            android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/titlea"
+                android:text="voltage"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_columnWeight="1"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/sord"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/imageb"
+            android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/titleb"
+                android:text="power"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sord"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:text="single phase"
+            android:textSize="14sp"
+            android:id="@+id/firstchoice"
+            android:textColor="#ffffff"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            />
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="three phase"
+            android:textSize="14sp"
+            android:layout_below="@+id/firstchoice"
+            android:id="@+id/secondchoice"
+            android:textColor="#ffffff"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/secondchoice"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/inputa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/unita"
+                    android:text="volts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@android:color/transparent"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/sord"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+
+                android:text="single circuit"
+                android:textSize="14sp"
+                android:id="@+id/thirdchoice"
+                android:textColor="#ffffff"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="double circuit"
+                android:textSize="14sp"
+                android:layout_below="@+id/thirdchoice"
+                android:id="@+id/fourthchoice"
+                android:textColor="#ffffff"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/fourthchoice"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/inputb"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/unitb"
+                    android:text="watts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        </GridLayout>
+</LinearLayout>
+    </LinearLayout>
